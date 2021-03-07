@@ -20,3 +20,6 @@ Route::get('welcome', function () {
 
 Route::get('/','App\Http\Controllers\pagecontroller@home');
 Route::resource('pages', pagecontroller::class);
+
+
+Route::get('test', [pagecontroller::class, 'test']);
