@@ -2,24 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests;
 use Illuminate\Http\Request;
-
-use App\Models\information;
 
 class HomeController extends Controller
 {
-    public function home(){
-        $information = information::latest()->paginate(200);
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-        return view('pages.home', compact('information'));
-    }   
-
-    public function test(){
-    
-        return view('pages.test');
-    }   
-
-    
-
-
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('home');
+    }
 }
