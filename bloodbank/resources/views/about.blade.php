@@ -4,12 +4,7 @@
 
     <div class="col-md-12">
 
-        <p style="text-align:center">
-            <img alt="Minhazul Kabir" class="rounded img-thumbnail img-fluid" src="https://scontent.fdac24-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/20045678_503141670027556_6311152625910805671_o.jpg?_nc_cat=0&efg=eyJpIjoiYiJ9&_nc_eui2=AeHVZiucGlQjDOJn9NgRexazgtqcbhmVDjm9KdP3r-tIoIXb_Wm1cwbmsIOL2TlLQAOZqyiCRmuBgGdpsZO2IMXl7M2HJHSGdFGXq0uEjQTDAw&oh=5e05b449fc702eab630b0ed081a9360e&oe=5BBEAD19" style="border-style:solid; border-width:1px; height:302px; width:350px" />
-        </p>
-        <p>
-            Hi, I'm <a href="https://bd.linkedin.com/in/minhazulkabir">Minhazul Kabir</a>   - Final year Computer Science and Engeering student of <a href="http://www.sust.edu/">Shahjalal University of Science and Technology</a>. I love programming a lot.
-        </p>
+    
         <div class="col-lg-10 col-xl-10 offset-lg-1 ">
 
             <table class="table table-bordered table-dark text-center">

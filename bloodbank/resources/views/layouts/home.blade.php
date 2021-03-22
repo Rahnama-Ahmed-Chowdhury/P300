@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home<br></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/donar">Donar</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/donor_list">Donar</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/blog">Blog</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/manuel">Manuel</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/about-us">About Us</a></li>
@@ -100,14 +100,7 @@
             </div>
         </div>
     </footer>
-    <div class="col item social">
-        <a href="https://github.com/MinhazulKabir"><i class="icon ion-social-github-outline"></i></a>
-        <a href="https://bd.linkedin.com/in/minhazulkabir"><i class="icon ion-social-linkedin-outline"></i></a>
-        <a href="https://www.facebook.com/MinhazulKabir"><i class="icon ion-social-facebook-outline"></i></a>
-        <a href="https://twitter.com/mminhazulkabir"><i class="icon ion-social-twitter-outline"></i></a>
-        <a href="https://www.instagram.com/minhazulkabir/"><i class="icon ion-social-instagram-outline"></i></a>
-    </div>
-    <p class="copyright" style="font-size:15px;padding-top:10px;">Minhazul Kabir, 📧 kabir110409@acc.edu.bd © <?php echo date("Y"); ?>  </p>
+    <p class="copyright" style="font-size:15px;padding-top:10px;">Rahnama Ahmed, 📧 rahnamachowdhury@gmail.com © <?php echo date("Y"); ?>  </p>
 
 </div>
 
