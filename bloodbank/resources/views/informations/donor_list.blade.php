@@ -15,6 +15,7 @@
 				<th> Address</th>
 				<th> Email</th>
 				<th> Mobile Number</th>
+				<th> Action </th>
 			</tr>
 	@foreach ($informations as $information)
 			<tr style="text-align: center;"> 
@@ -25,10 +26,20 @@
 				<td>{{$information->Address}} </td>
 				<td>{{$information->Email}} </td>
 				<td>{{$information->Mobile_Number}} </td>
-			
+				<td><center>
+					<center><button type="submit" > <a href="{{ route('informations.edit', $information->id)}}"style="text-decoration:none;"> Edit </a> </button>
+					<form action="{{ route('informations.destroy', $information->id)}}" method="POST">				
+					@csrf
+                    @method('DELETE') 
+
+					<button type="submit" > Delete </button></center>
+					</form>
+					</center>
+				</td>
 			</tr>
+
 		@endforeach 
-		 </tr>
+		 
        
     </table>
     <br>

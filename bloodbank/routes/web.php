@@ -21,6 +21,7 @@ Route::get('/about-us',[PageController::class,'about']);
 Route::get('/contact-us',[PageController::class,'contact']);
 
 
-Route::resource('pages', DonarController::class);
+Route::resource('informations', DonarController::class);
 Route::get('donor_list',[DonarController::class,'donor_list']);
 Route::get('create',[DonarController::class,'create']);
+

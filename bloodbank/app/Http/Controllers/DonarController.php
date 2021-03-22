@@ -3,27 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\information;
+use App\Models\Information;
 
 
 class DonarController extends Controller
 {
-     public function index(){
-        $informations = information::latest()->paginate(200);
-
-        return view('pages.donor', compact('informations'));
-    }
-
+    
     public function donor_list(){
-         $informations = information::latest()->paginate(200);
-        return view('pages.donor_list', compact('informations'));
+         $informations = Information::latest()->paginate(200);
+        return view('informations.donor_list', compact('informations'));
     }
 
      
      public function create(){
 
-        return view('pages.create');
+        return view('informations.create');
     }
+
+
 
     public function store(Request $request){
         $request->validate([
@@ -36,36 +33,43 @@ class DonarController extends Controller
             'Address'=>'required'
         ]);
 
-        information::create($request->all());
+        Information::create($request->all());
 
-         $informations = information::latest()->paginate(200);
-        return view('pages.donor_list', compact('informations'));
-    }
-
- /*   public function edit(Student $student){
-        return view('students.edit', compact('student'));
+         $informations = Information::latest()->paginate(200);
+        return view('informations.donor_list', compact('informations'));
     }
 
 
-    public function update(Request $request, Student $student){
+     public function edit(Information $information){
+            return view('informations.edit', compact('information'));
+        }
+
+
+
+    public function update(Request $request, Information $information){
         $request->validate([
-            'name'=>'required',
-            'student_id' => 'required',
-            'batch'=>'required',
-             'sports_name'=>'required'
+            'Name'=>'required',
+            'Gender' => 'required',
+            'Date_of_Birth'=>'required',
+            'Blood_Type'=>'required',
+            'Mobile_Number'=>'required',
+            'Email'=>'required',
+            'Address'=>'required'
         ]);
 
         
-        $student->update($request->all());
+        $information->update($request->all());
 
-        return redirect()->route('students.index')->with('success', 'Profile Updated Successflly!');
+         $informations = Information::latest()->paginate(200);
+        return view('informations.donor_list', compact('informations'));
     }
 
-    public function destroy(Student $student){
+   public function destroy(Information $information){
 
-        $student->delete();
-        return redirect()->route('students.index')->with('success', 'Profile Deleted Successflly!');
+        $information->delete();
+        $informations = Information::latest()->paginate(200);
+        return view('informations.donor_list', compact('informations'));
     }
-*/
+
 
 }
