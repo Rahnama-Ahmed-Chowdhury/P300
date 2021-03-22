@@ -4,7 +4,7 @@
 
 	<div><br>
 <br>
-<a href='/create' class="type_text_1"> New Donor </a>
+<a href='/create'style="text-align: right"> New Donor </a>
 <br>
 	<table border="2" width="780" class="tble_clr" style="text-align: center;">
 			<tr style="text-align: center;">
@@ -15,7 +15,10 @@
 				<th> Address</th>
 				<th> Email</th>
 				<th> Mobile Number</th>
+				@auth
 				<th> Action </th>
+				@endauth
+				
 			</tr>
 	@foreach ($informations as $information)
 			<tr style="text-align: center;"> 
@@ -26,6 +29,7 @@
 				<td>{{$information->Address}} </td>
 				<td>{{$information->Email}} </td>
 				<td>{{$information->Mobile_Number}} </td>
+				@auth
 				<td><center>
 					<center><button type="submit" > <a href="{{ route('informations.edit', $information->id)}}"style="text-decoration:none;"> Edit </a> </button>
 					<form action="{{ route('informations.destroy', $information->id)}}" method="POST">				
@@ -36,6 +40,7 @@
 					</form>
 					</center>
 				</td>
+				@endauth
 			</tr>
 
 		@endforeach 

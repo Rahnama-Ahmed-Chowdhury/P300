@@ -7,7 +7,14 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+
+
     <div class="row justify-content-center">
+        <br>
+         <br>
+          <br>
+        <h3>Welcome to Admin Login Page</h3>
+        <br>
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
