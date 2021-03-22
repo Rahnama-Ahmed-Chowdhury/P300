@@ -39,22 +39,28 @@
                 </ul>
             </div>
             <div class="col-lg-4 text-right" >
-                @if (Auth::check())
-                    <div style="color:white">
-                        Logged in as </br>{{ Auth::user()->email }}
-                        <form action="{{ route('auth.logout') }}" method="post">
-                            {{ csrf_field() }}
-                            <input type="submit" value="Logout" class="btn btn-success">
-                        </form>
+               @guest
+                           
+                        @else
+                          
+                                
+                                <a class="lay_txt1" > <p style="color:white;"> Admin:
+                                    {{ Auth::user()->name }}</p>
+                                </a>
+                      
+                               
+                                    <a class="lay_txt2"  href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-                        {!! Form::open(['method'=>'POST','url'=>'/login'])  !!}
-                            <input type="submit" value="Admin Panel" class="btn btn-primary">
-                        {!! Form::close() !!}
-                    </div>
-
-
-                @endif
-
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                
+                            
+                        @endguest
             </div>
         </div>
     </nav>

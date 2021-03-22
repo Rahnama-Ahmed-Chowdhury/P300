@@ -4,6 +4,7 @@ use App\Http\Controllers\AarticleController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\DonarController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\ChangePasswordController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
@@ -25,3 +26,6 @@ Route::resource('informations', DonarController::class);
 Route::get('donor_list',[DonarController::class,'donor_list']);
 Route::get('create',[DonarController::class,'create']);
 
+
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
