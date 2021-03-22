@@ -26,6 +26,6 @@ Route::resource('informations', DonarController::class);
 Route::get('donor_list',[DonarController::class,'donor_list']);
 Route::get('create',[DonarController::class,'create']);
 
-
+Route::get('/search/', 'App\Http\Controllers\DonarController@search')->name('search');
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -32,6 +32,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home<br></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/donor_list">Donar</a></li>
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="/search">Search</a></li>
                     
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/manuel">Manuel</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/about-us">About Us</a></li>
