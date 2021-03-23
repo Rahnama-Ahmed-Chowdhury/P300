@@ -6,7 +6,8 @@
 <br>
 <a href='/create'style="text-align: right"> New Donor </a>
 <br>
-	<table border="2" width="780" class="tble_clr" style="text-align: center;">
+<div style="height:400px;overflow-y:scroll">
+	<table border="2" width="780" style="text-align: center;">
 			<tr style="text-align: center;">
 				<th> Name </th>
 				<th> Gender </th>
@@ -49,5 +50,6 @@
     </table>
     <br>
     <br>
+</div>
 </div>
 @endsection

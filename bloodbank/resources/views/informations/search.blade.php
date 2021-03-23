@@ -4,10 +4,7 @@
 
 
 				<div class="text-center">
-					<br>
-<br>
-<br>
-<br>
+					
 <br>
 <br>
 					<h2 class="text-center">Search by blood group </h2>
@@ -15,9 +12,6 @@
 				    <input type="text" name="search" required/>
 				    <button type="submit">Search</button>
 				</form>
-				<br>
-<br>
-<br>
 <br>
 <br>
 				</div>
@@ -25,7 +19,7 @@
 				<hr>
 				<hr>
 <br><br><br><br><br>
-		<div>
+		<div style="height:400px;overflow-y:scroll">
 		@if($informations->isNotEmpty())
 		   <table border="2" width="780" class="tble_clr" style="text-align: center;">
 			<tr style="text-align: center;">
@@ -75,6 +69,10 @@
 		        <h2 >No Blood group of this type  found</h2>
 		    </div>
 		@endif	
+
+		<br>
+<br>
+<br>
 	</div>
 
 <br>

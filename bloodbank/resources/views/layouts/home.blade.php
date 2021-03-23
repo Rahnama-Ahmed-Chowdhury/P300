@@ -100,17 +100,10 @@
                     <ul>
                         <li><a href="#">Ambulance</a></li>
                         <li><a href="http://www.infoblood.org">Blood Bank</a></li>
-                        <li><a href="#">Dhaka Medical</a></li>
+                        <li><a href="#">MAG Osmani Medical</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h5>Others: </h5>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
+                
                 <div class="col-md-6 item text">
                     <h5>About Us:</h5>
                     <p>
